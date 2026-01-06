@@ -1,45 +1,53 @@
-# 📊 Vendor Performance Analysis
+# Vendor Performance Analysis
 
-## 🔍 Overview
-This project analyzes vendor purchase and sales data to evaluate vendor performance and support data-driven procurement and inventory decisions using Python-based analytics.
-
----
-
-## 🧩 Project Structure & Flow
-
-### 1️⃣ Data Preparation (`da.ipynb`)
-- Data loading and cleaning  
-- Handling missing and inconsistent values  
-- Feature creation for analysis readiness  
-
-### 2️⃣ Exploratory Data Analysis (`Exploratory Data Analysis.ipynb`)
-- Descriptive statistics  
-- Trend and pattern analysis  
-- Data visualization for insights  
-
-### 3️⃣ Vendor Performance Evaluation (`vendor_preformance_analysis.ipynb`)
-- Vendor contribution analysis  
-- Identification of top and low-performing vendors  
-- Pareto and inventory efficiency analysis  
+## Project Overview
+This project analyzes vendor-level purchase and sales data to evaluate performance, identify cost concentration, and understand inventory behavior. The goal is to provide practical insights that support better procurement and inventory decisions.
 
 ---
 
-## 🛠 Tech Stack
-- **Language:** Python  
-- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn  
-- **Environment:** Jupyter Notebook  
+## Project Workflow
+The analysis is structured into three logical stages, each handled in a separate notebook.
+
+### 1. Data Preparation (`da.ipynb`)
+- Raw datasets are loaded and checked for inconsistencies  
+- Missing values and data quality issues are addressed  
+- Required calculated fields are created for analysis  
+
+This step ensures the data is reliable before moving forward.
 
 ---
 
-## 📈 Key Insights
-- Identifies vendors driving maximum purchase value  
-- Highlights underperforming vendors  
-- Supports inventory and procurement optimization  
+### 2. Exploratory Data Analysis (`Exploratory Data Analysis.ipynb`)
+- Summary statistics are generated  
+- Purchase and sales trends are examined  
+- Key distributions and relationships are visualized  
+
+This stage helps in understanding patterns and anomalies in the data.
 
 ---
 
-## ▶️ How to Run
-Execute notebooks in the following order:
+### 3. Vendor Performance Analysis (`vendor_preformance_analysis.ipynb`)
+- Vendors are ranked based on purchase contribution  
+- High and low-performing vendors are compared  
+- Inventory efficiency and capital lock-in are analyzed  
 
-```text
-da.ipynb → Exploratory Data Analysis.ipynb → vendor_preformance_analysis.ipynb
+The results highlight areas for optimization and cost control.
+
+---
+
+## Tools & Technologies
+- Python  
+- Pandas and NumPy  
+- Matplotlib and Seaborn  
+- Jupyter Notebook  
+
+---
+
+## Execution Order
+For best results, run the notebooks in the following sequence:
+
+da.ipynb
+↓
+Exploratory Data Analysis.ipynb
+↓
+vendor_preformance_analysis.ipynb
